@@ -10,7 +10,7 @@ namespace Polyclinic.Classes
 {
     internal class DB
     {
-        public MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password='';database=polyclinic");
+        public MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password='root';database=polyclinic");
 
         public void openConnection()
         {

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Finance));
             this.UpdateButton = new System.Windows.Forms.Button();
             this.SearchTextBox = new System.Windows.Forms.TextBox();
             this.SearchButton = new System.Windows.Forms.Button();
@@ -36,12 +37,12 @@
             this.EditButton = new System.Windows.Forms.Button();
             this.AddButton = new System.Windows.Forms.Button();
             this.ExpensesDataGridView = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.idDocrors = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idDoctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FIODoctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -139,17 +140,6 @@
             this.ExpensesDataGridView.Size = new System.Drawing.Size(1034, 448);
             this.ExpensesDataGridView.TabIndex = 8;
             // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(463, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 26);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Расходы";
-            // 
             // idDocrors
             // 
             this.idDocrors.HeaderText = "id";
@@ -186,6 +176,17 @@
             this.FIODoctor.MinimumWidth = 6;
             this.FIODoctor.Name = "FIODoctor";
             this.FIODoctor.Width = 125;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(463, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 26);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Расходы";
             // 
             // label2
             // 
@@ -267,6 +268,7 @@
             this.Controls.Add(this.EditButton);
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.ExpensesDataGridView);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Finance";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Финансы";

@@ -28,14 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Treatments));
             this.DoctorsDataGridView = new System.Windows.Forms.DataGridView();
-            this.AddButton = new System.Windows.Forms.Button();
-            this.EditButton = new System.Windows.Forms.Button();
-            this.BackButton = new System.Windows.Forms.Button();
-            this.DeleteButton = new System.Windows.Forms.Button();
-            this.SearchButton = new System.Windows.Forms.Button();
-            this.SearchTextBox = new System.Windows.Forms.TextBox();
-            this.UpdateButton = new System.Windows.Forms.Button();
             this.idDocrors = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idPatients = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idDoctors = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,6 +38,13 @@
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Patients = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.doctors = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AddButton = new System.Windows.Forms.Button();
+            this.EditButton = new System.Windows.Forms.Button();
+            this.BackButton = new System.Windows.Forms.Button();
+            this.DeleteButton = new System.Windows.Forms.Button();
+            this.SearchButton = new System.Windows.Forms.Button();
+            this.SearchTextBox = new System.Windows.Forms.TextBox();
+            this.UpdateButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DoctorsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,6 +69,65 @@
             this.DoctorsDataGridView.RowTemplate.Height = 24;
             this.DoctorsDataGridView.Size = new System.Drawing.Size(990, 380);
             this.DoctorsDataGridView.TabIndex = 0;
+            // 
+            // idDocrors
+            // 
+            this.idDocrors.HeaderText = "id";
+            this.idDocrors.MinimumWidth = 6;
+            this.idDocrors.Name = "idDocrors";
+            this.idDocrors.Visible = false;
+            this.idDocrors.Width = 125;
+            // 
+            // idPatients
+            // 
+            this.idPatients.HeaderText = "Код пациента";
+            this.idPatients.MinimumWidth = 6;
+            this.idPatients.Name = "idPatients";
+            this.idPatients.Visible = false;
+            this.idPatients.Width = 125;
+            // 
+            // idDoctors
+            // 
+            this.idDoctors.HeaderText = "Код доктора";
+            this.idDoctors.MinimumWidth = 6;
+            this.idDoctors.Name = "idDoctors";
+            this.idDoctors.Visible = false;
+            this.idDoctors.Width = 125;
+            // 
+            // dateTreatment
+            // 
+            this.dateTreatment.HeaderText = "Дата обращения";
+            this.dateTreatment.MinimumWidth = 6;
+            this.dateTreatment.Name = "dateTreatment";
+            this.dateTreatment.Width = 125;
+            // 
+            // diagnosis
+            // 
+            this.diagnosis.HeaderText = "Диагноз";
+            this.diagnosis.MinimumWidth = 6;
+            this.diagnosis.Name = "diagnosis";
+            this.diagnosis.Width = 125;
+            // 
+            // price
+            // 
+            this.price.HeaderText = "Цена";
+            this.price.MinimumWidth = 6;
+            this.price.Name = "price";
+            this.price.Width = 125;
+            // 
+            // Patients
+            // 
+            this.Patients.HeaderText = "Пациент";
+            this.Patients.MinimumWidth = 6;
+            this.Patients.Name = "Patients";
+            this.Patients.Width = 125;
+            // 
+            // doctors
+            // 
+            this.doctors.HeaderText = "Доктор";
+            this.doctors.MinimumWidth = 6;
+            this.doctors.Name = "doctors";
+            this.doctors.Width = 125;
             // 
             // AddButton
             // 
@@ -136,65 +196,6 @@
             this.UpdateButton.UseVisualStyleBackColor = true;
             this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
-            // idDocrors
-            // 
-            this.idDocrors.HeaderText = "id";
-            this.idDocrors.MinimumWidth = 6;
-            this.idDocrors.Name = "idDocrors";
-            this.idDocrors.Visible = false;
-            this.idDocrors.Width = 125;
-            // 
-            // idPatients
-            // 
-            this.idPatients.HeaderText = "Код пациента";
-            this.idPatients.MinimumWidth = 6;
-            this.idPatients.Name = "idPatients";
-            this.idPatients.Visible = false;
-            this.idPatients.Width = 125;
-            // 
-            // idDoctors
-            // 
-            this.idDoctors.HeaderText = "Код доктора";
-            this.idDoctors.MinimumWidth = 6;
-            this.idDoctors.Name = "idDoctors";
-            this.idDoctors.Visible = false;
-            this.idDoctors.Width = 125;
-            // 
-            // dateTreatment
-            // 
-            this.dateTreatment.HeaderText = "Дата обращения";
-            this.dateTreatment.MinimumWidth = 6;
-            this.dateTreatment.Name = "dateTreatment";
-            this.dateTreatment.Width = 125;
-            // 
-            // diagnosis
-            // 
-            this.diagnosis.HeaderText = "Диагноз";
-            this.diagnosis.MinimumWidth = 6;
-            this.diagnosis.Name = "diagnosis";
-            this.diagnosis.Width = 125;
-            // 
-            // price
-            // 
-            this.price.HeaderText = "Цена";
-            this.price.MinimumWidth = 6;
-            this.price.Name = "price";
-            this.price.Width = 125;
-            // 
-            // Patients
-            // 
-            this.Patients.HeaderText = "Пациент";
-            this.Patients.MinimumWidth = 6;
-            this.Patients.Name = "Patients";
-            this.Patients.Width = 125;
-            // 
-            // doctors
-            // 
-            this.doctors.HeaderText = "Доктор";
-            this.doctors.MinimumWidth = 6;
-            this.doctors.Name = "doctors";
-            this.doctors.Width = 125;
-            // 
             // Treatments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -208,6 +209,7 @@
             this.Controls.Add(this.EditButton);
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.DoctorsDataGridView);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Treatments";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Обращения";

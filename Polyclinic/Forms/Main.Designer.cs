@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.DoctorsButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.TreatmentsButton = new System.Windows.Forms.Button();
@@ -100,6 +101,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Polyclinic.Properties.Resources.photo_5285419757442547251_y;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(495, 526);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.FinanceButton);
@@ -107,6 +110,7 @@
             this.Controls.Add(this.TreatmentsButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DoctorsButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Главная";

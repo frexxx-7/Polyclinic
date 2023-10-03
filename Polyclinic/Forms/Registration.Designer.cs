@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registration));
             this.RegistrationButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.RepeatPasswordTextBox = new System.Windows.Forms.TextBox();
@@ -128,7 +129,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 591);
+            this.BackgroundImage = global::Polyclinic.Properties.Resources.photo_5285419757442547251_y;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(515, 591);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.RegistrationButton);
             this.Controls.Add(this.label4);
@@ -138,6 +141,7 @@
             this.Controls.Add(this.PasswordTextBox);
             this.Controls.Add(this.LoginTextBox);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Registration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Регистрация";

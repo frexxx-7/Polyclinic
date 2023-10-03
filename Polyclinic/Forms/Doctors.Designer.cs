@@ -28,7 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Doctors));
             this.DoctorsDataGridView = new System.Windows.Forms.DataGridView();
+            this.idDocrors = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NameDoctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Patronymic = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Speciality = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Qualification = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AddButton = new System.Windows.Forms.Button();
             this.EditButton = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
@@ -36,12 +43,6 @@
             this.SearchButton = new System.Windows.Forms.Button();
             this.SearchTextBox = new System.Windows.Forms.TextBox();
             this.UpdateButton = new System.Windows.Forms.Button();
-            this.Qualification = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Speciality = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Patronymic = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NameDoctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idDocrors = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DoctorsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,6 +65,49 @@
             this.DoctorsDataGridView.RowTemplate.Height = 24;
             this.DoctorsDataGridView.Size = new System.Drawing.Size(990, 380);
             this.DoctorsDataGridView.TabIndex = 0;
+            // 
+            // idDocrors
+            // 
+            this.idDocrors.HeaderText = "id";
+            this.idDocrors.MinimumWidth = 6;
+            this.idDocrors.Name = "idDocrors";
+            this.idDocrors.Visible = false;
+            this.idDocrors.Width = 125;
+            // 
+            // NameDoctor
+            // 
+            this.NameDoctor.HeaderText = "Имя";
+            this.NameDoctor.MinimumWidth = 6;
+            this.NameDoctor.Name = "NameDoctor";
+            this.NameDoctor.Width = 125;
+            // 
+            // Surname
+            // 
+            this.Surname.HeaderText = "Фамилия";
+            this.Surname.MinimumWidth = 6;
+            this.Surname.Name = "Surname";
+            this.Surname.Width = 125;
+            // 
+            // Patronymic
+            // 
+            this.Patronymic.HeaderText = "Отчество";
+            this.Patronymic.MinimumWidth = 6;
+            this.Patronymic.Name = "Patronymic";
+            this.Patronymic.Width = 125;
+            // 
+            // Speciality
+            // 
+            this.Speciality.HeaderText = "Специальность";
+            this.Speciality.MinimumWidth = 6;
+            this.Speciality.Name = "Speciality";
+            this.Speciality.Width = 125;
+            // 
+            // Qualification
+            // 
+            this.Qualification.HeaderText = "Квалификация";
+            this.Qualification.MinimumWidth = 6;
+            this.Qualification.Name = "Qualification";
+            this.Qualification.Width = 125;
             // 
             // AddButton
             // 
@@ -132,49 +176,6 @@
             this.UpdateButton.UseVisualStyleBackColor = true;
             this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
-            // Qualification
-            // 
-            this.Qualification.HeaderText = "Квалификация";
-            this.Qualification.MinimumWidth = 6;
-            this.Qualification.Name = "Qualification";
-            this.Qualification.Width = 125;
-            // 
-            // Speciality
-            // 
-            this.Speciality.HeaderText = "Специальность";
-            this.Speciality.MinimumWidth = 6;
-            this.Speciality.Name = "Speciality";
-            this.Speciality.Width = 125;
-            // 
-            // Patronymic
-            // 
-            this.Patronymic.HeaderText = "Отчество";
-            this.Patronymic.MinimumWidth = 6;
-            this.Patronymic.Name = "Patronymic";
-            this.Patronymic.Width = 125;
-            // 
-            // Surname
-            // 
-            this.Surname.HeaderText = "Фамилия";
-            this.Surname.MinimumWidth = 6;
-            this.Surname.Name = "Surname";
-            this.Surname.Width = 125;
-            // 
-            // NameDoctor
-            // 
-            this.NameDoctor.HeaderText = "Имя";
-            this.NameDoctor.MinimumWidth = 6;
-            this.NameDoctor.Name = "NameDoctor";
-            this.NameDoctor.Width = 125;
-            // 
-            // idDocrors
-            // 
-            this.idDocrors.HeaderText = "id";
-            this.idDocrors.MinimumWidth = 6;
-            this.idDocrors.Name = "idDocrors";
-            this.idDocrors.Visible = false;
-            this.idDocrors.Width = 125;
-            // 
             // Doctors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -188,6 +189,7 @@
             this.Controls.Add(this.EditButton);
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.DoctorsDataGridView);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Doctors";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Врачи";

@@ -28,7 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Patients));
             this.DoctorsDataGridView = new System.Windows.Forms.DataGridView();
+            this.idDocrors = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NameDoctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Patronymic = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateBirthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AddButton = new System.Windows.Forms.Button();
             this.EditButton = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
@@ -36,11 +42,6 @@
             this.SearchButton = new System.Windows.Forms.Button();
             this.SearchTextBox = new System.Windows.Forms.TextBox();
             this.UpdateButton = new System.Windows.Forms.Button();
-            this.idDocrors = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NameDoctor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Patronymic = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DateBirthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DoctorsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,6 +63,42 @@
             this.DoctorsDataGridView.RowTemplate.Height = 24;
             this.DoctorsDataGridView.Size = new System.Drawing.Size(990, 380);
             this.DoctorsDataGridView.TabIndex = 0;
+            // 
+            // idDocrors
+            // 
+            this.idDocrors.HeaderText = "id";
+            this.idDocrors.MinimumWidth = 6;
+            this.idDocrors.Name = "idDocrors";
+            this.idDocrors.Visible = false;
+            this.idDocrors.Width = 125;
+            // 
+            // NameDoctor
+            // 
+            this.NameDoctor.HeaderText = "Имя";
+            this.NameDoctor.MinimumWidth = 6;
+            this.NameDoctor.Name = "NameDoctor";
+            this.NameDoctor.Width = 125;
+            // 
+            // Surname
+            // 
+            this.Surname.HeaderText = "Фамилия";
+            this.Surname.MinimumWidth = 6;
+            this.Surname.Name = "Surname";
+            this.Surname.Width = 125;
+            // 
+            // Patronymic
+            // 
+            this.Patronymic.HeaderText = "Отчество";
+            this.Patronymic.MinimumWidth = 6;
+            this.Patronymic.Name = "Patronymic";
+            this.Patronymic.Width = 125;
+            // 
+            // DateBirthday
+            // 
+            this.DateBirthday.HeaderText = "Дата рождения";
+            this.DateBirthday.MinimumWidth = 6;
+            this.DateBirthday.Name = "DateBirthday";
+            this.DateBirthday.Width = 125;
             // 
             // AddButton
             // 
@@ -130,42 +167,6 @@
             this.UpdateButton.UseVisualStyleBackColor = true;
             this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
-            // idDocrors
-            // 
-            this.idDocrors.HeaderText = "id";
-            this.idDocrors.MinimumWidth = 6;
-            this.idDocrors.Name = "idDocrors";
-            this.idDocrors.Visible = false;
-            this.idDocrors.Width = 125;
-            // 
-            // NameDoctor
-            // 
-            this.NameDoctor.HeaderText = "Имя";
-            this.NameDoctor.MinimumWidth = 6;
-            this.NameDoctor.Name = "NameDoctor";
-            this.NameDoctor.Width = 125;
-            // 
-            // Surname
-            // 
-            this.Surname.HeaderText = "Фамилия";
-            this.Surname.MinimumWidth = 6;
-            this.Surname.Name = "Surname";
-            this.Surname.Width = 125;
-            // 
-            // Patronymic
-            // 
-            this.Patronymic.HeaderText = "Отчество";
-            this.Patronymic.MinimumWidth = 6;
-            this.Patronymic.Name = "Patronymic";
-            this.Patronymic.Width = 125;
-            // 
-            // DateBirthday
-            // 
-            this.DateBirthday.HeaderText = "Дата рождения";
-            this.DateBirthday.MinimumWidth = 6;
-            this.DateBirthday.Name = "DateBirthday";
-            this.DateBirthday.Width = 125;
-            // 
             // Patients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -179,6 +180,7 @@
             this.Controls.Add(this.EditButton);
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.DoctorsDataGridView);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Patients";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Пациенты";

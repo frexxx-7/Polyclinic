@@ -59,5 +59,15 @@ namespace Polyclinic.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo_5285419757442547251_y {
+            get {
+                object obj = ResourceManager.GetObject("photo_5285419757442547251_y", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
