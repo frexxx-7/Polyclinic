@@ -81,6 +81,7 @@
     <Compile Include="Classes\AbstractFactory.cs" />
     <Compile Include="Classes\ComboboxItem.cs" />
     <Compile Include="Classes\DB.cs" />
+    <Compile Include="Classes\MVC.cs" />
     <Compile Include="Classes\PaidPolyclinicAdapter.cs" />
     <Compile Include="Classes\State.cs" />
     <Compile Include="Forms\Autorization.cs">
