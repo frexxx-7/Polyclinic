@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Finance));
             this.UpdateButton = new System.Windows.Forms.Button();
             this.SearchTextBox = new System.Windows.Forms.TextBox();
@@ -124,8 +125,11 @@
             // 
             // ExpensesDataGridView
             // 
+            this.ExpensesDataGridView.AllowUserToAddRows = false;
+            this.ExpensesDataGridView.AllowUserToDeleteRows = false;
             this.ExpensesDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.ExpensesDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ExpensesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ExpensesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDocrors,
@@ -136,6 +140,8 @@
             this.ExpensesDataGridView.Location = new System.Drawing.Point(12, 81);
             this.ExpensesDataGridView.Name = "ExpensesDataGridView";
             this.ExpensesDataGridView.RowHeadersWidth = 51;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ExpensesDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.ExpensesDataGridView.RowTemplate.Height = 24;
             this.ExpensesDataGridView.Size = new System.Drawing.Size(1034, 448);
             this.ExpensesDataGridView.TabIndex = 8;
@@ -146,21 +152,18 @@
             this.idDocrors.MinimumWidth = 6;
             this.idDocrors.Name = "idDocrors";
             this.idDocrors.Visible = false;
-            this.idDocrors.Width = 125;
             // 
             // price
             // 
             this.price.HeaderText = "Цена";
             this.price.MinimumWidth = 6;
             this.price.Name = "price";
-            this.price.Width = 125;
             // 
             // description
             // 
             this.description.HeaderText = "Описание";
             this.description.MinimumWidth = 6;
             this.description.Name = "description";
-            this.description.Width = 125;
             // 
             // idDoctor
             // 
@@ -168,14 +171,12 @@
             this.idDoctor.MinimumWidth = 6;
             this.idDoctor.Name = "idDoctor";
             this.idDoctor.Visible = false;
-            this.idDoctor.Width = 125;
             // 
             // FIODoctor
             // 
             this.FIODoctor.HeaderText = "ФИО Доктора";
             this.FIODoctor.MinimumWidth = 6;
             this.FIODoctor.Name = "FIODoctor";
-            this.FIODoctor.Width = 125;
             // 
             // label1
             // 
